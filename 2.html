@@ -6,6 +6,7 @@
   <!-- meta 태그, charset: 저장방식 -->
   <meta charset="utf-8">
   <!-- CSS -->
+  <!--
   <style>
     /* Tag 선택자 */
     h1{
@@ -29,28 +30,34 @@
     }
     /* 우선순위 tag < class < tag */
   </style>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113084830-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-113084830-1');
-  </script>
+  -->
+  <style>
+    a {
+      color: black;
+      text-decoration: none;
+    }
+    #grid {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+  </style>
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
-  <!-- 부모와 자식 태그 -->
-  <ol>
-    <!-- class: Grouping, 여러개의 값이 들어올 수 있고 띄어쓰기로 구분함. -->
-    <li><a href="1.html" class="saw">HTML</a></li>
-    <li><a href="2.html" class="saw" id="active">CSS</a></li>
-    <li><a href="3.html">JavaScript</a></li>
-  </ol>
-  <!-- Heading -->
-  <h2>CSS이란 무엇인가?</h2>
-  <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language. Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.
-</p>
+  <div id="grid">
+    <!-- 부모와 자식 태그 -->
+    <ol>
+      <!-- class: Grouping, 여러개의 값이 들어올 수 있고 띄어쓰기로 구분함. -->
+      <li><a href="1.html" class="saw">HTML</a></li>
+      <li><a href="2.html" class="saw" id="active">CSS</a></li>
+      <li><a href="3.html">JavaScript</a></li>
+    </ol>
+    <div>
+      <!-- Heading -->
+      <h2>CSS이란 무엇인가?</h2>
+      <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language. Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.
+      </p>
+    </div>
+  </div>
 </body>
 </html>
