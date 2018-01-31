@@ -5,6 +5,9 @@
   <title>WEB1 - Welcome</title>
   <!-- meta 태그, charset: 저장방식 -->
   <meta charset="utf-8">
+  <!-- CSS 코드 삽입 -->
+  <link rel="stylesheet" href="style.css">
+<!--
   <style>
     a {
       color: black;
@@ -16,7 +19,7 @@
       text-align: center;
     }
   </style>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113084830-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -25,23 +28,28 @@
 
     gtag('config', 'UA-113084830-1');
   </script>
+-->
 </head>
 <body>
   <h1>Github-Desktop Download > Repository > Open in Atom</h1>
   <h1>Sign in Github and You may need Access Token.</h1>
   <h1>Github와 연동</h1>
   <h1><a href="index.html">WEB</a></h1>
-  <!-- 부모와 자식 태그 -->
-  <ol>
-    <li><a href="1.html">HTML</a></li>
-    <li><a href="2.html">CSS</a></li>
-    <li><a href="3.html">JavaScript</a></li>
-  </ol>
-  <p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/tZooW6PritE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  </p>
-  <!-- Heading -->
-  <h2>WEB이란 무엇인가?</h2>
-  <p>The World Wide Web (abbreviated WWW or the Web) is an information space where documents and other web resources are identified by Uniform Resource Locators (URLs), interlinked by hypertext links, and can be accessed via the Internet. English scientist Tim Berners-Lee invented the World Wide Web in 1989. He wrote the first web browser computer program in 1990 while employed at CERN in Switzerland. The Web browser was released outside CERN in 1991, first to other research institutions starting in January 1991 and to the general public on the Internet in August 1991.</p>
+  <div id="grid">
+    <!-- 부모와 자식 태그 -->
+    <ol>
+      <li><a href="1.html">HTML</a></li>
+      <li><a href="2.html">CSS</a></li>
+      <li><a href="3.html">JavaScript</a></li>
+    </ol>
+    <div id="article">
+      <p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tZooW6PritE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </p>
+      <!-- Heading -->
+      <h2>WEB이란 무엇인가?</h2>
+      <p>The World Wide Web (abbreviated WWW or the Web) is an information space where documents and other web resources are identified by Uniform Resource Locators (URLs), interlinked by hypertext links, and can be accessed via the Internet. English scientist Tim Berners-Lee invented the World Wide Web in 1989. He wrote the first web browser computer program in 1990 while employed at CERN in Switzerland. The Web browser was released outside CERN in 1991, first to other research institutions starting in January 1991 and to the general public on the Internet in August 1991.</p>
+    </div>
+  </div>
 </body>
 </html>

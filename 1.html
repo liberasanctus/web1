@@ -5,6 +5,8 @@
   <title>WEB1 - HTML</title>
   <!-- meta 태그, charset: 저장방식 -->
   <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+<!--
   <style>
     a {
       color: black;
@@ -16,7 +18,6 @@
       text-align: center;
     }
   </style>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113084830-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -25,23 +26,28 @@
 
     gtag('config', 'UA-113084830-1');
   </script>
+-->
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
-  <!-- 부모와 자식 태그 -->
-  <ol>
-    <li><a href="1.html">HTML</a></li>
-    <li><a href="2.html">CSS</a></li>
-    <li><a href="3.html">JavaScript</a></li>
-  </ol>
-  <!-- Heading -->
-  <h2>HTML이란 무엇인가?</h2>
-  <!-- paragraph와 anchor -->
-  <p><a href="https://www.w3.org/TR/html51/" target="_blank" title="HTML speicification">Hypertext Markup Language (HTML)</a> is the standared markup language for
-  <strong>creating <u>web</u> pages</strong>and web applications. Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML descripbes the structure of a web page semantically and originally included cues for the appearance of the document.</p>
-  <!-- img 태그 -->
-  <img src="coding.jpg" width="100%">
-  <!-- CSS 적용 -->
-  <p style="margin-top:45px;">HTML elements are the building blocks of a web page semantically and originally included cues for the appearance of the document.</p>
+  <div id="grid">
+    <!-- 부모와 자식 태그 -->
+    <ol>
+      <li><a href="1.html">HTML</a></li>
+      <li><a href="2.html">CSS</a></li>
+      <li><a href="3.html">JavaScript</a></li>
+    </ol>
+    <div id="article">
+      <!-- Heading -->
+      <h2>HTML이란 무엇인가?</h2>
+      <!-- paragraph와 anchor -->
+      <p><a href="https://www.w3.org/TR/html51/" target="_blank" title="HTML speicification">Hypertext Markup Language (HTML)</a> is the standared markup language for
+      <strong>creating <u>web</u> pages</strong>and web applications. Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML descripbes the structure of a web page semantically and originally included cues for the appearance of the document.</p>
+      <!-- img 태그 -->
+      <img src="coding.jpg" width="100%">
+      <!-- CSS 적용 -->
+      <p style="margin-top:45px;">HTML elements are the building blocks of a web page semantically and originally included cues for the appearance of the document.</p>
+    </div>
+  </div>
 </body>
 </html>

@@ -1,0 +1,45 @@
+/* Cashing(저장하다) : 우리의 컴퓨터에 저장해 놓았다가
+   style.css를 부르게 되면 저장된 결과를 가져와서 속도를 높인다.
+*/
+/* link tag를 사용하여 불러들인다. */
+body {
+  margin: 0;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+h1 {
+  font-size: 45px;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  margin: 0;
+  padding: 20px;
+}
+ol {
+  border-right: 1px solid gray;
+  width: 100px;
+  margin: 0;
+  padding: 20px;
+}
+#grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#grid ol {
+  padding-left: 33px;
+}
+#grid #article {
+  padding-left: 25px;
+}
+@media(max-width:800px){
+  #grid {
+    display: block;
+  }
+  h1 {
+    border-bottom: none;
+  }
+  ol {
+    border-right: none;
+  }
+}
